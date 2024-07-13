@@ -20,7 +20,7 @@ with article_2_path.open('r', encoding='windows-1251') as file:
     article_2 = file.read()
 
 
-patterns = ["алгоритм", "нейснуючий підрядок для тестування"]
+patterns = ["алгоритмів", "неіснуючий підрядок для тестування"]
 
 def measure_time(algorithm, text, pattern):
     return timeit.timeit(lambda: algorithm(text, pattern), number=1000)
